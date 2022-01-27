@@ -33,14 +33,14 @@ public class BigString {
 										"  ////////////  ",
 										"  ////////////  "};
 	
-	private static  String[] LetterO = new String[]  {"       ////     ",
-											  "     /// ///    ",
-											  "   ///    ///   ",
-											  "  ///      ///  ",
-											  "  ///      ///  ",
-											  "   ///    ///   ",
-											  "    /// ///     ",
-											  "     ////       "};
+	private static  String[] LetterO = new String[]  {	"     //\\\\     ",
+														"    ///\\\\\\    ",
+														"   ///  \\\\\\   ",
+														"  ///    \\\\\\  ",
+														"  \\\\\\    ///  ",
+														"   \\\\\\  ///   ",
+														"    \\\\\\///    ",
+											  			"     \\\\//     "};
 	
 	private  static String[] W = new String[]  {"  ///      ////     ///  ",
 										"  ///     /////     ///  ",
