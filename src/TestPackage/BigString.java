@@ -4,80 +4,7 @@ import java.util.*;
 public class BigString {
 
 	
-	private String InputString = new String();
-	// there is better place to put these hardcoded values but its here do to project scale.
-	private static String[] H = new String[]  {"  ///      ///  ",
-										"  ///      ///  ",
-										"  ///      ///  ",
-										"  ////////////  ",
-										"  ////////////  ",
-										"  ///      ///  ",
-										"  ///      ///  ",
-										"  ///      ///  "};
-	
-	private static String[] E = new String[]  {"  ////////////  ",
-										"  ////////////  ",
-										"  ///           ",
-										"  ////////////  ",
-										"  ////////////  ",
-										"  ///           ",
-										"  ////////////  ",
-										"  ////////////  "};
-	
-	private static  String[] L = new String[]  {"  ///           ",
-										"  ///           ",
-										"  ///           ",
-										"  ///           ",
-										"  ///           ",
-										"  ///           ",
-										"  ////////////  ",
-										"  ////////////  "};
-	
-	private static  String[] LetterO = new String[]  {	"     //\\\\     ",
-														"    ///\\\\\\    ",
-														"   ///  \\\\\\   ",
-														"  ///    \\\\\\  ",
-														"  \\\\\\    ///  ",
-														"   \\\\\\  ///   ",
-														"    \\\\\\///    ",
-											  			"     \\\\//     "};
-	
-	private  static String[] W = new String[]  {"  ///      ////     ///  ",
-										"  ///     /////     ///  ",
-										"   ///   //////    ///   ",
-										"   ///   /// ///   ///   ",
-										"    /// ///  ///  ///    ",
-										"    /// ///   /// ///    ",
-										"    //////    //////     ",
-										"    /////     /////      "};
-	
-	private static String[] R = new String[]  {"  ///////////    ",
-										"  ////////////   ",
-										"  ///      ////  ",
-										"  ///      ////  ",
-										"  ///////////    ",
-										"  ///     ///    ",
-										"  ///      ///   ",
-										"  ///       ///  "};
-	
-	private static String[] D = new String[]  {"  ///////////    ",
-										"  ////////////   ",
-										"  ///      ////  ",
-										"  ///        /// ",
-										"  ///        /// ",
-										"  ///      ////  ",
-										"  ////////////   ",
-										"  ///////////    "};
-	
-	private  static String[] Space = new String[]  {"         ",
-											"         ",
-											"         ",
-											"         ",
-											"         ",
-											"         ",
-											"         ",
-											"         "};
-	
+	private String InputString = new String();	
 	
 	private Map<String, BigChar> BigCharHolder = new HashMap<String, BigChar>();
 	
@@ -87,14 +14,70 @@ public class BigString {
 	{
 		InputString = input;
 		
-		BigCharHolder.put("H",new BigChar(H));
-		BigCharHolder.put("L",new BigChar(L));
-		BigCharHolder.put("O",new BigChar(LetterO));
-		BigCharHolder.put("E",new BigChar(E));
-		BigCharHolder.put("W",new BigChar(W));
-		BigCharHolder.put("R",new BigChar(R));
-		BigCharHolder.put("D",new BigChar(D));
-		BigCharHolder.put(" ",new BigChar(Space));
+		BigCharHolder.put("H",new BigChar(new String[]  {"  ///      ///  ",
+				"  ///      ///  ",
+				"  ///      ///  ",
+				"  ////////////  ",
+				"  ////////////  ",
+				"  ///      ///  ",
+				"  ///      ///  ",
+				"  ///      ///  "}));
+		BigCharHolder.put("L",new BigChar(new String[]  {"  ///           ",
+				"  ///           ",
+				"  ///           ",
+				"  ///           ",
+				"  ///           ",
+				"  ///           ",
+				"  ////////////  ",
+				"  ////////////  "}));
+		BigCharHolder.put("O",new BigChar(new String[]  {	"     //\\\\     ",
+				"    ///\\\\\\    ",
+				"   ///  \\\\\\   ",
+				"  ///    \\\\\\  ",
+				"  \\\\\\    ///  ",
+				"   \\\\\\  ///   ",
+				"    \\\\\\///    ",
+	  			"     \\\\//     "}));
+		BigCharHolder.put("E",new BigChar(new String[]  {"  ////////////  ",
+				"  ////////////  ",
+				"  ///           ",
+				"  ////////////  ",
+				"  ////////////  ",
+				"  ///           ",
+				"  ////////////  ",
+				"  ////////////  "}));
+		BigCharHolder.put("W",new BigChar(new String[]  {"  ///      ////     ///  ",
+			"  ///     /////     ///  ",
+			"   ///   //////    ///   ",
+			"   ///   /// ///   ///   ",
+			"    /// ///  ///  ///    ",
+			"    /// ///   /// ///    ",
+			"    //////    //////     ",
+			"    /////     /////      "}));
+		BigCharHolder.put("R",new BigChar(new String[]  {"  ///////////    ",
+				"  ////////////   ",
+				"  ///      ////  ",
+				"  ///      ////  ",
+				"  ///////////    ",
+				"  ///     ///    ",
+				"  ///      ///   ",
+				"  ///       ///  "}));
+		BigCharHolder.put("D",new BigChar(new String[]  {"  ///////////    ",
+				"  ////////////   ",
+				"  ///      ////  ",
+				"  ///        /// ",
+				"  ///        /// ",
+				"  ///      ////  ",
+				"  ////////////   ",
+				"  ///////////    "}));
+		BigCharHolder.put(" ",new BigChar(new String[]  {"         ",
+				"         ",
+				"         ",
+				"         ",
+				"         ",
+				"         ",
+				"         ",
+				"         "}));
 	}
 	
 	
